@@ -1,8 +1,19 @@
 FROM ubuntu:xenial
-RUN echo 'apt-get -qq update && apt-cache policy $@' > /bin/listpkgs.sh
-ADD repo.list /etc/apt/sources.list.d/repo.list
+
+RUN echo 'apt-get -qq update && apt-cache policy $@' > /opt/listpkgs.sh
+
 ADD http://apt.mirantis.com/public.gpg /tmp/apt.mirantis.com.gpg
 RUN apt-key add /tmp/apt.mirantis.com.gpg
-ADD http://mirror.mirantis.com/nightly/openstack-pike/xenial/archive-pike.key /tmp/mirror.mirantis.com.gpg
-RUN apt-key add /tmp/mirror.mirantis.com.gpg
-ENTRYPOINT ["/bin/sh", "/bin/listpkgs.sh"]
+
+ADD http://mirror.mirantis.com/nightly/openstack-pike/xenial/archive-pike.key /tmp/nightly-mmc.gpg
+RUN apt-key add /tmp/nightly-mmc.gpg
+
+ADD http://mirror.mirantis.com/testing/openstack-pike/xenial/archive-pike.key /tmp/testing-mmc.gpg
+RUN apt-key add /tmp/testing-mmc.gpg
+
+COPY mcp-tagged.list /etc/apt/sources.list.d/mcp-tagged.list
+RUN apt-get -qq update
+
+COPY mcp-repos.list /etc/apt/sources.list.d/mcp-repos.list
+
+ENTRYPOINT ["/bin/sh", "/opt/listpkgs.sh"]
