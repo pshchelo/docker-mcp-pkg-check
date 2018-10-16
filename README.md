@@ -2,6 +2,5 @@
 
 Use it as:
 
-`docker build . -t pkglist`
-`docker run --rm pkglist <package-name>`
-
+    docker build . -t pkglist
+    docker run --rm pkglist <package-name>
