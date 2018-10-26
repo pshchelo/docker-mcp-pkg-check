@@ -11,6 +11,9 @@ RUN apt-key add /tmp/nightly-mmc.gpg
 ADD http://mirror.mirantis.com/testing/openstack-pike/xenial/archive-pike.key /tmp/testing-mmc.gpg
 RUN apt-key add /tmp/testing-mmc.gpg
 
+ADD http://mirror.mirantis.com/2018.8.0/openstack-pike/xenial/archive-pike.key /tmp/release-mmc.gpg
+RUN apt-key add /tmp/release-mmc.gpg
+
 COPY mcp-tagged.list /etc/apt/sources.list.d/mcp-tagged.list
 RUN apt-get -qq update
 
