@@ -76,3 +76,9 @@ deb http://apt.mirantis.com/xenial/openstack/ocata 2018.8.0 main
 deb http://apt.mirantis.com/xenial/openstack/pike 2018.8.0 main
 
 deb http://mirror.mirantis.com/2018.8.0/openstack-pike/xenial xenial main
+
+# 2018.11
+deb http://mirror.mirantis.com/2018.11.0/openstack-pike/xenial xenial main
+deb http://mirror.mirantis.com/2018.11.0/openstack-queens/xenial xenial main
+
+deb http://apt.mirantis.com/xenial 2018.11.0 salt
