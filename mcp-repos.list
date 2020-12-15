@@ -1,55 +1,14 @@
-# NIGHTLY
-deb http://apt.mirantis.com/xenial nightly salt
-deb http://mirror.mirantis.com/nightly/salt-formulas/xenial xenial main
-
-deb http://apt.mirantis.com/xenial/openstack/mitaka nightly main
-deb http://apt.mirantis.com/xenial/openstack/newton nightly main
-deb http://apt.mirantis.com/xenial/openstack/ocata nightly main
-deb http://apt.mirantis.com/xenial/openstack/pike nightly main
-
-#deb http://mirror.mirantis.com/nightly/openstack-mitaka/trusty mitaka main
+# unreleased
 deb http://mirror.mirantis.com/nightly/openstack-pike/xenial xenial main
 deb http://mirror.mirantis.com/nightly/openstack-queens/xenial xenial main
-deb http://mirror.mirantis.com/nightly/openstack-rocky/xenial xenial main
-
-# TESTING
-deb http://apt.mirantis.com/xenial testing salt
-deb http://mirror.mirantis.com/testing/salt-formulas/xenial nightly salt
-
-deb http://apt.mirantis.com/xenial/openstack/mitaka testing main
-deb http://apt.mirantis.com/xenial/openstack/newton testing main
-deb http://apt.mirantis.com/xenial/openstack/ocata testing main
-deb http://apt.mirantis.com/xenial/openstack/pike testing main
-
-#deb http://mirror.mirantis.com/testing/openstack-mitaka/trusty mitaka main
 deb http://mirror.mirantis.com/testing/openstack-pike/xenial xenial main
 deb http://mirror.mirantis.com/testing/openstack-queens/xenial xenial main
-#deb http://mirror.mirantis.com/testing/openstack-rocky/xenial xenial main
+deb http://mirror.mirantis.com/update/proposed/openstack-pike/xenial xenial main
+deb http://mirror.mirantis.com/update/proposed/openstack-queens/xenial xenial main
 
-# PROPOSED
-deb http://apt.mirantis.com/xenial proposed salt
-deb http://mirror.mirantis.com/proposed/salt-formulas/xenial nightly salt
-
-deb http://apt.mirantis.com/xenial/openstack/mitaka proposed main
-deb http://apt.mirantis.com/xenial/openstack/newton proposed main
-deb http://apt.mirantis.com/xenial/openstack/ocata proposed main
-deb http://apt.mirantis.com/xenial/openstack/pike proposed main
-
-#deb http://mirror.mirantis.com/proposed/openstack-mitaka/trusty mitaka main
-deb http://mirror.mirantis.com/proposed/openstack-pike/xenial xenial main
-deb http://mirror.mirantis.com/proposed/openstack-queens/xenial xenial main
-#deb http://mirror.mirantis.com/proposed/openstack-rocky/xenial xenial main
-
-# STABLE
-deb http://apt.mirantis.com/xenial stable salt
-deb http://mirror.mirantis.com/stable/salt-formulas/xenial nightly salt
-
-deb http://apt.mirantis.com/xenial/openstack/mitaka stable main
-deb http://apt.mirantis.com/xenial/openstack/newton stable main
-deb http://apt.mirantis.com/xenial/openstack/ocata stable main
-deb http://apt.mirantis.com/xenial/openstack/pike stable main
-
-#deb http://mirror.mirantis.com/stable/openstack-mitaka/trusty mitaka main
-deb http://mirror.mirantis.com/stable/openstack-pike/xenial xenial main
-deb http://mirror.mirantis.com/stable/openstack-queens/xenial xenial main
-#deb http://mirror.mirantis.com/stable/openstack-rocky/xenial xenial main
+# released
+deb http://mirror.mirantis.com/2019.2.0/openstack-pike/xenial xenial main
+deb http://mirror.mirantis.com/2019.2.0/openstack-queens/xenial xenial main
+# ... add other releases later
+deb http://mirror.mirantis.com/update/2019.2.12/openstack-pike/xenial xenial main
+deb http://mirror.mirantis.com/update/2019.2.12/openstack-queens/xenial xenial main
