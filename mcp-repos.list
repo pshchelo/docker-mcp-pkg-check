@@ -1,3 +1,17 @@
+# base for 2019.2.x releases
+deb http://mirror.mirantis.com/2019.2.0/openstack-pike/xenial xenial main
+deb http://mirror.mirantis.com/2019.2.0/openstack-queens/xenial xenial main
+# mirrors
+deb http://mirror.mirantis.com/2019.2.0/ubuntu/ xenial-updates main restricted universe
+deb http://mirror.mirantis.com/2019.2.0/ubuntu/ xenial-security main restricted universe
+
+# Releases
+deb http://mirror.mirantis.com/update/2019.2.16/openstack-pike/xenial xenial main
+deb http://mirror.mirantis.com/update/2019.2.16/openstack-queens/xenial xenial main
+# mirrors
+deb http://mirror.mirantis.com/update/2019.2.16/ubuntu/ xenial-updates main restricted universe
+deb http://mirror.mirantis.com/update/2019.2.16/ubuntu/ xenial-security main restricted universe
+
 # unreleased
 deb http://mirror.mirantis.com/nightly/openstack-pike/xenial xenial main
 deb http://mirror.mirantis.com/nightly/openstack-queens/xenial xenial main
@@ -5,10 +19,6 @@ deb http://mirror.mirantis.com/testing/openstack-pike/xenial xenial main
 deb http://mirror.mirantis.com/testing/openstack-queens/xenial xenial main
 deb http://mirror.mirantis.com/update/proposed/openstack-pike/xenial xenial main
 deb http://mirror.mirantis.com/update/proposed/openstack-queens/xenial xenial main
-
-# released
-deb http://mirror.mirantis.com/2019.2.0/openstack-pike/xenial xenial main
-deb http://mirror.mirantis.com/2019.2.0/openstack-queens/xenial xenial main
-# ... add other releases later
-deb http://mirror.mirantis.com/update/2019.2.12/openstack-pike/xenial xenial main
-deb http://mirror.mirantis.com/update/2019.2.12/openstack-queens/xenial xenial main
+# mirrors
+deb http://mirror.mirantis.com/update/proposed/ubuntu/ xenial-updates main restricted universe
+deb http://mirror.mirantis.com/update/proposed/ubuntu/ xenial-security main restricted universe
